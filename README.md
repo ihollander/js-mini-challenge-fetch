@@ -81,7 +81,7 @@ Once you have successfully fetched the players from the server, display them on 
 
 **YOUR NOTES**
 ```
-
+First, I wrote a function for rendering each player passed in an array (it calls on the function from the starter code of the event mini challenge). Then I wrote a function for fetching the players from the local server and calling the afformentioned render each player function.
 ```
 
 ## Deliverable 2: Create Player
@@ -125,7 +125,7 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+I modified the event listener from yesterday to include a post request for the object. This breaks if I remove the "prevent default" event method.
 ```
 
 ## Deliverable 3: Like Button

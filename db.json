@@ -30,7 +30,15 @@
       "name": "Jordan Henderson",
       "nickname": "Hendo",
       "photo": "https://icdn.empireofthekop.com/wp-content/uploads/2020/03/Jordan-Henderson-640x426.jpg",
-      "likes": 1000
+      "likes": 1003
+    },
+    {
+      "number": "1",
+      "name": "test1",
+      "nickname": "test1",
+      "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg",
+      "likes": 1007,
+      "id": 5
     }
   ]
 }
