@@ -6,7 +6,7 @@
       "name": "Mo Salah",
       "nickname": "The Egyptian King",
       "photo": "https://cdn.cnn.com/cnnnext/dam/assets/190501145802-mo-salah-exlarge-169.jpg",
-      "likes": 1003
+      "likes": 15
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "name": "Roberto Firmino",
       "nickname": "Bobby Chompers",
       "photo": "https://vignette.wikia.nocookie.net/liverpoolfc/images/f/f3/RFirmino2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042207",
-      "likes": 1000
+      "likes": 5
     },
     {
       "id": 3,
@@ -31,6 +31,30 @@
       "nickname": "Hendo",
       "photo": "https://icdn.empireofthekop.com/wp-content/uploads/2020/03/Jordan-Henderson-640x426.jpg",
       "likes": 1000
+    },
+    {
+      "number": "1",
+      "name": "Stacey",
+      "nickname": "Stace The Ace",
+      "photo": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/1862/1048/274292f1-corgi.jpg?ve=1&tl=1",
+      "likes": 11,
+      "id": 5
+    },
+    {
+      "number": "6",
+      "name": "Anthony Jimenez",
+      "nickname": "The Ant that Can't ",
+      "photo": "https://previews.123rf.com/images/artbig/artbig1502/artbig150200002/36207350-orange-with-white-ant-soccer-ball-wants-to-play-football.jpg",
+      "likes": 11,
+      "id": 6
+    },
+    {
+      "number": "9",
+      "name": "Ian Wright",
+      "nickname": "Wrighty",
+      "photo": "https://www.nbcsports.com/sites/nbcsports.com/files/2019/01/07/nbc_pl_fdsiconsianwright_190107.jpg",
+      "likes": 5,
+      "id": 7
     }
   ]
 }
