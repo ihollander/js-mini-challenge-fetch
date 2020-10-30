@@ -6,7 +6,7 @@
       "name": "Mo Salah",
       "nickname": "The Egyptian King",
       "photo": "https://cdn.cnn.com/cnnnext/dam/assets/190501145802-mo-salah-exlarge-169.jpg",
-      "likes": 1003
+      "likes": 1008
     },
     {
       "id": 2,
@@ -33,36 +33,12 @@
       "likes": 1003
     },
     {
-      "number": "1",
-      "name": "test1",
-      "nickname": "test1",
-      "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg",
-      "likes": 1007,
+      "number": "999",
+      "name": "Cloud Strife",
+      "nickname": "SOLDIER",
+      "photo": "https://i.pinimg.com/originals/24/70/4b/24704b21d77694146aeff9d8cb7f0729.jpg",
+      "likes": 1002,
       "id": 5
-    },
-    {
-      "number": "99",
-      "name": "new",
-      "nickname": "new",
-      "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg",
-      "likes": 1000,
-      "id": 6
-    },
-    {
-      "number": "66",
-      "name": "newnew",
-      "nickname": "newnew",
-      "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg",
-      "likes": 1000,
-      "id": 7
-    },
-    {
-      "number": "88",
-      "name": "newnewnew",
-      "nickname": "newnewnew",
-      "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg",
-      "likes": 1000,
-      "id": 8
     }
   ]
 }
