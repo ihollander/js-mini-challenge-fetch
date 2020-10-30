@@ -125,7 +125,7 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-I modified the event listener from yesterday to include a post request for the object. This breaks if I remove the "prevent default" event method.
+I refactored and modified the event listener from yesterday; it now includes a post request for the new player. At first the rendering wasn't working (I first appraoched this task by removing the preventDefault line), but learned after watching the CRUD lecture series that you can render the new object that's returned from the post request (YAY). 
 ```
 
 ## Deliverable 3: Like Button
@@ -165,5 +165,5 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-Add id to the playerdiv, add a patch request to the event listener for the like button.
+I first added the db id to a new data attribute (id) for the playerdiv. Then I added a patch request to the event listener for the like button - this just sends the updated likes to the db.
 ```
