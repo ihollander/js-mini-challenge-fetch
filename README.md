@@ -165,5 +165,5 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+Add id to the playerdiv, add a patch request to the event listener for the like button.
 ```

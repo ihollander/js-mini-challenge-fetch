@@ -65,10 +65,12 @@ newPlayerForm.addEventListener('submit', function (e) {
     
     fetch("http://localhost:3000/players", configObj)
     .then(response => response.json())
-    .then(data => console.log("Success", data))
+    .then(newPlayer => {
+        renderPlayer(newPlayer)
+        console.log("Success", newPlayer)
+    })
 
     e.target.reset()
-
 })
 
 header.addEventListener('click', handleToggleColor)
