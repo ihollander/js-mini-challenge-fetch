@@ -165,5 +165,5 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+gotta use 'PATH' and use the specific /[id] path 
 ```

@@ -31,6 +31,14 @@
       "nickname": "Hendo",
       "photo": "https://icdn.empireofthekop.com/wp-content/uploads/2020/03/Jordan-Henderson-640x426.jpg",
       "likes": 1000
+    },
+    {
+      "number": "42",
+      "name": "Brian Feldman",
+      "nickname": "that's a pic of my dog",
+      "photo": "https://i.imgur.com/T4Tz1cI.png",
+      "likes": 42,
+      "id": 5
     }
   ]
 }
