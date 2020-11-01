@@ -27,7 +27,7 @@ We're going to build off the code we worked on in the Events Mini Challenge, and
 
 There's a section in this Readme file for your notes on each deliverable. As you go through the deliverables, write down some notes in this file on how you solved each problem. It'll help reinforce what you learned and give you a head start next time you see a similar problem.
 
-## Setup
+<!-- ## Setup
 
 This Mini Challenge uses `json-server` to create a RESTful server using a `.json` file. 
 
@@ -43,9 +43,9 @@ Then, we'll need to start `json-server` and have it use the `db.json` file in th
 $ json-server --watch db.json
 ```
 
-To check if your server is running, open [http://localhost:3000/players](http://localhost:3000/players) in your browser. You should see an array of all the players from the `db.json` file.
+To check if your server is running, open [http://localhost:3000/players](http://localhost:3000/players) in your browser. You should see an array of all the players from the `db.json` file. -->
 
-## Deliverable 1: Fetch Players
+<!-- ## Deliverable 1: Fetch Players
 
 **When the application loads**, all the players should be displayed.
 
@@ -75,16 +75,18 @@ Example Response:
   },
   ...
 ]
-```
-
-Once you have successfully fetched the players from the server, display them on the page (you can re-use the code from the previous Mini Challenge to display the players).
+``` -->
+<!-- 
+Once you have successfully fetched the players from the server, display them on the page (you can re-use the code from the previous Mini Challenge to display the players). -->
 
 **YOUR NOTES**
 ```
-
+To solve this one, I reused my playerContainer variable, as well as my renderPlayer function
+Step 2. I create a renderAllPlayers function to iterate through all of the player data.
+Step 3. I created an initialize function that will fetch the players and use the .renderAllPlayers function to display the players on the page .
 ```
 
-## Deliverable 2: Create Player
+<!-- ## Deliverable 2: Create Player
 
 **When a user submits the form**, the new player should be persisted in the database.
 
@@ -121,14 +123,16 @@ Example Response:
 
 *After the player has been persisted*, the new player should be displayed on the bottom of the page (you can reuse your code from the previous Mini Challenge to help with this). 
 
-To check if your fetch request is working, you can look at the `db.json` file to see if your player has been added. You can also try refreshing the page to see if the new player still shows up.
+To check if your fetch request is working, you can look at the `db.json` file to see if your player has been added. You can also try refreshing the page to see if the new player still shows up. -->
 
 **YOUR NOTES**
 ```
-
+To solve this one I added my old code from the previous mini challenge to create the new player form and gather the user input.
+Step 1. added a fetch request inside the event listener for the form submit, which sent the data to the server
+Step 2. added the new player to the page by grabbing the new data that is returned from the server and rendering it on the page. did this by using the .then() method to return the promise
 ```
 
-## Deliverable 3: Like Button
+<!-- ## Deliverable 3: Like Button
 
 **When a user clicks the like button for a player**, that player's likes should increase by 1. The player's updated likes should persist on the server, and also be displayed on the page.
 
@@ -161,9 +165,12 @@ Example Response:
 
 It's up to you if you'd like to handle this *optimistically* or *pessimistically*.
 
-To check if your fetch request is working, you can look at the `db.json` file to see if the likes for your player has been updated. You can also try refreshing the page to see if the player's likes still show the updated number.
+To check if your fetch request is working, you can look at the `db.json` file to see if the likes for your player has been updated. You can also try refreshing the page to see if the player's likes still show the updated number. -->
 
 **YOUR NOTES**
 ```
-
+I used the code from the previous mini challenge to bring my event listener and event action for likes.
+Step 1. add a dataset for id on the playerDiv inside the renderPlayer function, to be used to access the path to the player id in the PATCH request
+Step 2. write the fetch request to update the likes inside the event listener for clicks on the like button.
+Step 3. update the number of likes and display on the page
 ```

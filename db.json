@@ -31,6 +31,14 @@
       "nickname": "Hendo",
       "photo": "https://icdn.empireofthekop.com/wp-content/uploads/2020/03/Jordan-Henderson-640x426.jpg",
       "likes": 1000
+    },
+    {
+      "number": "10",
+      "name": "Sadio Mane",
+      "nickname": "Ronaldinho",
+      "photo": "https://images.daznservices.com/di/library/GOAL/a2/ec/sadio-mane-liverpool-2019-20_14uvaynrbh2121g3q7o2kla4vc.jpg?t=1826142671&quality=100",
+      "likes": 1010,
+      "id": 5
     }
   ]
 }
