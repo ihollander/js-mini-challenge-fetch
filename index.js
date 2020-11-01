@@ -22,24 +22,23 @@ function renderPlayer(player) {
   function increaseLikes() {
   player.likes++ ;
     
-    let configObject = {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-      },
-        body: JSON.stringify({ likes: player.likes })
-    }
-          return fetch("http://localhost:3000/players" + `/${player.id}`, configObject)
-            .then(function(response){
-              return response.json()
-            }).then(function(data){
-              showLikes.textContent = `${player.likes} likes.`
-            }) .catch(function(error) {
-              alert(error.message)
-            })
-    }
-    
+  let configObject = {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+    },
+      body: JSON.stringify({ likes: player.likes })
+  }
+    return fetch("http://localhost:3000/players" + `/${player.id}`, configObject)
+      .then(function(response){
+        return response.json()
+    }).then(function(data){
+        showLikes.textContent = `${player.likes} likes.`
+    }) .catch(function(error) {
+        alert(error.message)
+    })
+  }
 }
 //***************************************************
 
