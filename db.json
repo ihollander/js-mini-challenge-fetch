@@ -30,7 +30,7 @@
       "name": "Jordan Henderson",
       "nickname": "Hendo",
       "photo": "https://icdn.empireofthekop.com/wp-content/uploads/2020/03/Jordan-Henderson-640x426.jpg",
-      "likes": 1000
+      "likes": 1007
     },
     {
       "number": "1",
@@ -42,7 +42,7 @@
     },
     {
       "number": "7",
-      "name": "Suss",
+      "name": "Suso",
       "nickname": "The Little Airplane",
       "photo": "https://d3nfwcxd527z59.cloudfront.net/content/uploads/2019/09/05090948/Suso-Liverpool-2012.jpg",
       "likes": 2,
@@ -55,6 +55,14 @@
       "photo": "https://i2-prod.liverpoolecho.co.uk/incoming/article8048907.ece/ALTERNATES/s1200/458385564.jpg",
       "likes": 4,
       "id": 7
+    },
+    {
+      "number": "7",
+      "name": "Mike Smith",
+      "nickname": "Casanova",
+      "photo": "https://d3nfwcxd527z59.cloudfront.net/content/uploads/2018/09/30085632/Ojo-PF.jpg",
+      "likes": 11,
+      "id": 8
     }
   ]
 }
