@@ -81,7 +81,7 @@ Once you have successfully fetched the players from the server, display them on 
 
 **YOUR NOTES**
 ```
-
+upon Initialization of the page, I want for Get players to Display on the page. I'll define a new function at the end of my index.js file to make a fetch and apply the render logic with the content of the db.json file I will be adding a new helper method to #renderAllPlayers
 ```
 
 ## Deliverable 2: Create Player
@@ -125,7 +125,7 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+I'm going to make a fetch with a POST within my newPlayerForm event function and use my playerObj constant to help populate the data. 
 ```
 
 ## Deliverable 3: Like Button
@@ -165,5 +165,5 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+Within my renderPlayer function, I'm going to create a new function to increaseLikes and use it in the eventListener function for the likebutton. I will need to add an id attribute to any new player cards to able to assoctiate individual likes with any one new player, then I will follow the documentation on Patch and have those like persist and render.
 ```

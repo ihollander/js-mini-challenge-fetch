@@ -6,7 +6,7 @@
       "name": "Mo Salah",
       "nickname": "The Egyptian King",
       "photo": "https://cdn.cnn.com/cnnnext/dam/assets/190501145802-mo-salah-exlarge-169.jpg",
-      "likes": 1003
+      "likes": 1054
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "name": "Roberto Firmino",
       "nickname": "Bobby Chompers",
       "photo": "https://vignette.wikia.nocookie.net/liverpoolfc/images/f/f3/RFirmino2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042207",
-      "likes": 1000
+      "likes": 1018
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "name": "Trent Alexander-Arnold",
       "nickname": "Young Trent",
       "photo": "https://resources.premierleague.com/photos/premierleague/photo/2019/12/26/f04875d3-a35d-4555-8e15-762bc8fcb5ea/1196090853.jpg?width=897&height=620",
-      "likes": 1000
+      "likes": 1004
     },
     {
       "id": 4,
@@ -31,6 +31,30 @@
       "nickname": "Hendo",
       "photo": "https://icdn.empireofthekop.com/wp-content/uploads/2020/03/Jordan-Henderson-640x426.jpg",
       "likes": 1000
+    },
+    {
+      "number": "1",
+      "name": "Loris Karius",
+      "nickname": "Casanova",
+      "photo": "https://cdn.vox-cdn.com/thumbor/iIxX646mu2r3PazAdF5Bhsg-gz0=/0x0:3442x2295/1320x0/filters:focal(0x0:3442x2295):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19886129/1005675294.jpg.jpg",
+      "likes": 4,
+      "id": 5
+    },
+    {
+      "number": "7",
+      "name": "Suss",
+      "nickname": "The Little Airplane",
+      "photo": "https://d3nfwcxd527z59.cloudfront.net/content/uploads/2019/09/05090948/Suso-Liverpool-2012.jpg",
+      "likes": 2,
+      "id": 6
+    },
+    {
+      "number": "46",
+      "name": "Jordan Rossiter",
+      "nickname": "The Celtic Top",
+      "photo": "https://i2-prod.liverpoolecho.co.uk/incoming/article8048907.ece/ALTERNATES/s1200/458385564.jpg",
+      "likes": 4,
+      "id": 7
     }
   ]
 }
