@@ -81,7 +81,7 @@ Once you have successfully fetched the players from the server, display them on 
 
 **YOUR NOTES**
 ```
-
+I'm getting a 'GET http://127.0.0.1:5501/data.js net::ERR_ABORTED 404 (Not Found)' error but I was still getting everything to work
 ```
 
 ## Deliverable 2: Create Player
