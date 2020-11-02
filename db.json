@@ -6,7 +6,7 @@
       "name": "Mo Salah",
       "nickname": "The Egyptian King",
       "photo": "https://cdn.cnn.com/cnnnext/dam/assets/190501145802-mo-salah-exlarge-169.jpg",
-      "likes": 1003
+      "likes": 1011
     },
     {
       "id": 2,
@@ -31,6 +31,30 @@
       "nickname": "Hendo",
       "photo": "https://icdn.empireofthekop.com/wp-content/uploads/2020/03/Jordan-Henderson-640x426.jpg",
       "likes": 1000
+    },
+    {
+      "number": "13",
+      "name": "Sisanwunmi Agbeyegbe",
+      "nickname": "Sisi",
+      "photo": "https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&amp;rect=37%2C29%2C4955%2C3293&amp;q=45&amp;auto=format&amp;w=926&amp;fit=clip",
+      "likes": 1000,
+      "id": 5
+    },
+    {
+      "number": "1",
+      "name": "Saitama",
+      "nickname": "One Punch Man",
+      "photo": "https://blogs.forbes.com/olliebarder/files/2019/03/one_punch_man_s2_new.jpg",
+      "likes": 1000,
+      "id": 6
+    },
+    {
+      "number": "2",
+      "name": "Genos",
+      "nickname": "Demon Cyborg",
+      "photo": "https://static2.cbrimages.com/wordpress/wp-content/uploads/2020/06/One-Punch-Man-Genos.jpg?q=50&fit=crop&w=960&h=500",
+      "likes": 1000,
+      "id": 7
     }
   ]
 }

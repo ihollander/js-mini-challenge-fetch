@@ -125,7 +125,7 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+I had some issues with the const name for my form's input showing up in my data but I realized it was because I had JSON.stringify({playerObj}) rather than JSON.stringify(playerObj)
 ```
 
 ## Deliverable 3: Like Button
