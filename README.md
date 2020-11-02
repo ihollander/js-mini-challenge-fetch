@@ -81,6 +81,9 @@ Once you have successfully fetched the players from the server, display them on 
 
 **YOUR NOTES**
 ```
+1. captured renderPlayer code from previous assignment to establish template/render each player
+2. wrote function to renderAllPlayers
+3. wrote fetch function to collect data from JSON server
 
 ```
 
@@ -125,6 +128,14 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
+set createPlayer function:
+1. made sure to preventDefault
+2. created newPlayer variable by setting data (.value) from input fields
+3. reset form
+4. POST request via fetch function. Made sure to include that function inside the createPlayer function so I could access newPlayer variable
+5. added Event Listener to #new-player-form with submit event and passed createPlayer thru
+
+** why does my player id number render at the bottom of the object list in db.json? **
 
 ```
 
@@ -165,5 +176,12 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
+set up HTML update first - Slapped it on the DOM early!
+1. set variable likePlayer with conditional logic to set variables and make sure that when heart is clicked, num of likes is updated.
+Also added player id so I could access it within the fetch request
+
+next up, PATCH request via fetch:
+1. has to go inside the likePlayer function so I can access variables.
+2. passed thru updated likes count
 
 ```
