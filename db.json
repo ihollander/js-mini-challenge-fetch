@@ -6,7 +6,7 @@
       "name": "Mo Salah",
       "nickname": "The Egyptian King",
       "photo": "https://cdn.cnn.com/cnnnext/dam/assets/190501145802-mo-salah-exlarge-169.jpg",
-      "likes": 1003
+      "likes": 8
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "name": "Roberto Firmino",
       "nickname": "Bobby Chompers",
       "photo": "https://vignette.wikia.nocookie.net/liverpoolfc/images/f/f3/RFirmino2019.jpeg/revision/latest/scale-to-width-down/340?cb=20190807042207",
-      "likes": 1000
+      "likes": 1005
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "name": "Trent Alexander-Arnold",
       "nickname": "Young Trent",
       "photo": "https://resources.premierleague.com/photos/premierleague/photo/2019/12/26/f04875d3-a35d-4555-8e15-762bc8fcb5ea/1196090853.jpg?width=897&height=620",
-      "likes": 1000
+      "likes": 1003
     },
     {
       "id": 4,
@@ -31,6 +31,14 @@
       "nickname": "Hendo",
       "photo": "https://icdn.empireofthekop.com/wp-content/uploads/2020/03/Jordan-Henderson-640x426.jpg",
       "likes": 1000
+    },
+    {
+      "name": "Bob",
+      "number": "17",
+      "nickname": "Bobby",
+      "photo": "https://i.pinimg.com/originals/40/32/d8/4032d8cc514317898ec0e107c9853a69.jpg",
+      "likes": 0,
+      "id": 5
     }
   ]
 }

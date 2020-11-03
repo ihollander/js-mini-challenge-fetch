@@ -81,6 +81,9 @@ Once you have successfully fetched the players from the server, display them on 
 
 **YOUR NOTES**
 ```
+- when DOM is loaded (team defer)
+- execute fetch request 
+- function to render data into DOM 
 
 ```
 
