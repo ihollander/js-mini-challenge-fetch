@@ -84,7 +84,7 @@ Once you've fetched the player, display the player in the DOM. You can re-use co
 
 **YOUR NOTES**
 ```
-
+used a get fetch request and created 2 helper functions to render all the data.
 ```
 
 ## Deliverable 2: Like Button
@@ -126,7 +126,7 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+first, i found the button on the dom and did made it work without persisting to the database. once the functionality worked, i fetched to the database, sending in the likes object has the value to change.
 ```
 
 ## Deliverable 3: Add Goal Video
@@ -171,5 +171,5 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+first figured it out without persisting. then added persisting. used a post request because creating a new goal. used a different api url to get to the goals. first 2 videos i did by manually entering the id. the last one, commented out the id and it persisted. how do you persist with the id??
 ```
