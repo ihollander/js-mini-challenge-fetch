@@ -85,6 +85,8 @@ Once you've fetched the player, display the player in the DOM. You can re-use co
 **YOUR NOTES**
 ```
 
+
+I first rendered the player to the page using innerHTML but then was unable to isolate the button / likes elements on the page (they were returning null) so had to redo creating the individual attributes. Is there a way to do it with innerHTML?
 ```
 
 ## Deliverable 2: Like Button
