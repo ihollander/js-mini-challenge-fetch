@@ -7,9 +7,7 @@ const goalUl = document.querySelector('#goals')
 const likeBtn = document.querySelector('like-button')
 const vid = document.querySelector('#new-goal-form')
 
-    // <button class="like-button">❤️</button>
-    // <h4>Great Goals</h4>
-    // <ul id="goals"></ul> *
+  
 fetch ("http://localhost:3000/players/1") 
 .then(resp => resp.json())
 .then(playerObj => {
@@ -18,9 +16,15 @@ fetch ("http://localhost:3000/players/1")
     playerName.textContent = playerObj.name
     playerNickname.textContent = playerObj.nickname
     playerLikes.textContent = `${playerObj.likes} Likes`
-    playerObj.goals.forEach(goal => {
+})
+
+fetch ("http://localhost:3000/goals")
+.then(resp => resp.json())
+.then(goalsObj => {
+    goalsObj.forEach(goal => {
         renderGoal(goal)
-        //getting a TypeError using the forEach and not sure why
+        //now getting Invalid or unexpected token
+
     })
 })
 
@@ -33,8 +37,8 @@ function renderGoal(goal) {
     goalLi.dataset.playerid = goal.playerId
 
     goalP.textContent = goal.description
-    goalA.href = goal.likeBtn
-    goalA.textContent = goal.likeBtn
+    goalA.href = goal.link
+    goalA.textContent = goal.link
 
     goalLi.append(goalP, goalA)
     goalUl.append(goalLi) 
