@@ -64,6 +64,8 @@ function submitGoal(event) {
     event.preventDefault()
 
     const oneGoal = {
+        // Not sure how to assign this :( 
+        // playerId: event.target.playerID.dataset.id,
         link: event.target.link.value,
         description: event.target.description.value
     }
@@ -75,8 +77,8 @@ function submitGoal(event) {
         body: JSON.stringify(oneGoal),
     })
     .then(response => response.json())
-    .then(playerData => {
-        renderGoals(playerData)
+    .then(oneGoal => {
+        renderGoals(oneGoal)
     })
 
     event.target.reset()
