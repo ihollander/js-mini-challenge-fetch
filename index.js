@@ -6,9 +6,6 @@ const playerGoalsUl = document.querySelector("#goals")
 const likeBtn = document.querySelector(".like-button")
 const newGoalForm = document.querySelector("#new-goal-form")
 
-likeBtn.addEventListener("click", () => playerLikeFetchPatch())
-// newGoalForm.addEventListener("submit", handleNewGoalFormSubmit)
-
 const handleNewGoalFormSubmit = event => {
 	event.preventDefault()
 	const link = event.target.link.value
@@ -21,6 +18,9 @@ const handleNewGoalFormSubmit = event => {
 	playerNewGoalFetchPost(newGoal)
 	event.target.reset
 }
+
+likeBtn.addEventListener("click", () => playerLikeFetchPatch())
+newGoalForm.addEventListener("submit", handleNewGoalFormSubmit)
 
 const playerLikeFetchPatch = () => {
 	return fetch("http://localhost:3000/players/1", {
@@ -90,7 +90,6 @@ const renderPlayer = playerData => {
 
 function initialize() {
 	playerDataFetchGet()
-	newGoalForm.addEventListener("submit", handleNewGoalFormSubmit)
 }
 
 initialize()
