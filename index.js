@@ -41,10 +41,13 @@ function renderGoal(goal) {
     const newGoal = document.createElement("li")
     const link = document.createElement("a")
     const description = document.createElement("p")
+
     description.textContent = goal.description
+
     link.href = goal.link 
     link.target = "_blank"
     link.textContent = goal.link
+
     newGoal.append(link, description)
     goalsList.append(newGoal)
 }
@@ -103,12 +106,10 @@ likeButton.addEventListener("click", () => {
         event.preventDefault()
         const id = parseInt(document.querySelector("div").dataset.id)
 
-        const newLink = form.link.value 
-        const newDescription = form.description.value 
-
         const newGoal = {
-        link: newLink,
-        description: newDescription
+            playerId: id,
+            link: form.link.value,
+            description: form.description.value
         }
 
         renderGoal(newGoal)
@@ -118,11 +119,7 @@ likeButton.addEventListener("click", () => {
             headers: {
                 "Content-Type": "application/json"
             }, 
-            body: JSON.stringify({
-                playerId: id,
-                link: newLink,
-                description: newDescription
-            })
+            body: JSON.stringify(newGoal)
         })
         .then(response => response.json())
         .then(goalsInfo => console.log(goalsInfo))

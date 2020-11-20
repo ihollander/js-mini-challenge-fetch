@@ -176,4 +176,6 @@ To check if your fetch request is working, you can look at the `db.json` file to
 Again I encountered the same issue as before when I had the id variable defined in the global scope - it was coming up as null and consequently was not persisting to the database. (Also took me a while to realize I had to call parseInt on it)
 I was really happy here to have refactored deliverable number 1 so I could use the renderGoal function. ]
 Going back to add in the dataset.id for the player, I wasn't sure which spot was best for it but decided on the player div. 
+
+I originally 
 ```
