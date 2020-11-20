@@ -95,7 +95,7 @@ const renderGoals = (playerObj) => {
 
 }
 
-// i know that I need to break out renderOneGoal from my forEach but when i do i break it into a million pieces. so for now, just leaving as is! My new goals do persist even tho it causes errors. Will be glad to know how to resolve this because my brain hurts too much right now to figure it out. thank you in advance ;)
+// i know that I need to break out renderOneGoal from my forEach but when i do i break it into a million pieces. (PlayerObj isn't accessible from a separate function, the way I was doing it) so for now, just leaving as is! My new goals do persist even tho submission cause an error. Will be glad to know how to resolve this because my brain hurts too much right now to figure it out. thank you in advance ;)
 
 
 
