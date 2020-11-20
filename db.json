@@ -51,6 +51,12 @@
       "playerId": 3,
       "link": "https://youtu.be/WLm-YK5Yfv0",
       "description": "What a comeback!"
+    },
+    {
+      "playerId": 1,
+      "link": "console.log(player.goals)",
+      "description": "How'd that get in there?",
+      "id": 4
     }
   ]
 }
