@@ -128,7 +128,7 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+I originally had newConst outside of the event listener, but it kept returning NaN and causing the db to persist a null value for the likes. Once I moved it inside, it worked correctly. I couldn't figure out why :(
 ```
 
 ## Deliverable 3: Add Goal Video
