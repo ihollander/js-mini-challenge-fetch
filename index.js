@@ -1,4 +1,4 @@
-const player = document.querySelector('.player')
+const playerr = document.querySelector('.player')
 const likeBtn = document.querySelector('.like-button')
 const playerName = document.querySelector('#player-name')
 const nickName = document.querySelector('#nickname')
@@ -22,18 +22,20 @@ function playerInfo(player) {
   nickName.textContent = player.nickname
   likes.textContent = `${player.likes} Likes`
   img.src = player.photo
+  img.alt = player.name
+  playerr.classList.id = player.id
   player.goals.forEach(playerGoals)
 }
 
 function playerGoals(goal) {
     const li = document.createElement('li')
     const a = document.createElement('a')
-    const p = document.createElement('p')
-    // li.textContent = goal.description
+    // const p = document.createElement('p')
+    li.dataset.id = goal.id
     a.href = goal.link
     a.textContent = goal.description
     li.append(a)
-    li.append(p)
+    // li.append(p)
     goals.append(li)
 }
 
@@ -61,15 +63,17 @@ function newGoal (event) {
   event.preventDefault()
 
   const goalObj = {
-    playerId: player.classList.id,
+    playerId: playerr.classList.id,
     link: event.target.link.value,
     description: event.target.description.value
   }
 
+  playerGoals(goalObj)
   fetch("http://localhost:3000/goals", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      Accept: 'application/json'
     },
     body: JSON.stringify(goalObj)
   })
