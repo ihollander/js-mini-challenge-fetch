@@ -4,6 +4,8 @@ const playerName = document.querySelector("h2")
 const playerImage = document.querySelector(".player img")
 const playerLikes = document.querySelector(".player p")
 const playerNickname = document.querySelector("em")
+//added player number to html
+const playerNumber = document.querySelector("#player-number")
 
 //page attributes
 const ul = document.querySelector("#goals")
@@ -21,7 +23,8 @@ fetch("http://localhost:3000/players/1")
     playerImage.src = playerObj.photo
     playerImage.alt = playerObj.name 
     playerName.textContent = playerObj.name 
-    playerNickname.textContent = playerObj.playerNickname
+    playerNickname.textContent = playerObj.nickname
+    playerNumber.textContent = `Player Number: ${playerObj.number}`
     playerImage.parentNode.dataset.id = playerObj.id 
     playerLikes.textContent = `${playerObj.likes} Likes`
     playerObj.goals.forEach(goal => {
