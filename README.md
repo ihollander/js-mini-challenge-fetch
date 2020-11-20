@@ -42,6 +42,7 @@ Then, we'll need to start `json-server` and have it use the `db.json` file in th
 ```sh
 $ json-server --watch db.json --routes routes.json
 ```
+test
 
 To check if your server is running, open [http://localhost:3000/players/1](http://localhost:3000/players/1) in your browser. You should see a `player` object with an array of goals, just like we had hard-coded into our application before.
 
