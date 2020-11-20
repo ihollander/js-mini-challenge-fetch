@@ -6,7 +6,7 @@
       "name": "Mo Salah",
       "nickname": "The Egyptian King",
       "photo": "https://cdn.cnn.com/cnnnext/dam/assets/190501145802-mo-salah-exlarge-169.jpg",
-      "likes": 1000
+      "likes": 1009
     },
     {
       "id": 2,
@@ -51,6 +51,24 @@
       "playerId": 3,
       "link": "https://youtu.be/WLm-YK5Yfv0",
       "description": "What a comeback!"
+    },
+    {
+      "playerId": 1,
+      "link": "https://youtu.be/6rmUwoM-KQs?t=131",
+      "description": "check out my new goal",
+      "id": 4
+    },
+    {
+      "playerId": 1,
+      "link": "https://youtu.be/6rmUwoM-KQs?t=131",
+      "description": "newest of all new goals",
+      "id": 5
+    },
+    {
+      "playerId": 1,
+      "link": "https://youtu.be/6rmUwoM-KQs?t=131",
+      "description": "desc",
+      "id": 6
     }
   ]
 }
