@@ -37,19 +37,19 @@
     {
       "id": 1,
       "playerId": 1,
-      "link": "https://youtu.be/mKY-kheEhBo",
+      "link": "https://www.youtube.com/embed/mKY-kheEhBo",
       "description": "A beautiful long-range goal, straight into the corner. Keeper had no chance!"
     },
     {
       "id": 2,
       "playerId": 1,
-      "link": "https://youtu.be/mJ8XGUgvoAM",
+      "link": "https://www.youtube.com/embed/mJ8XGUgvoAM",
       "description": "Fantastic strength to hold off a pair of defenders and place it beyond Pickford's reach"
     },
     {
       "id": 3,
       "playerId": 3,
-      "link": "https://youtu.be/WLm-YK5Yfv0",
+      "link": "https://www.youtube.com/embed/WLm-YK5Yfv0",
       "description": "What a comeback!"
     }
   ]
