@@ -84,7 +84,7 @@ Once you've fetched the player, display the player in the DOM. You can re-use co
 
 **YOUR NOTES**
 ```
-
+Wrote out my fetch and began working on the player. The players name, nickname, likes were easy the goal i was stuck on for a while. I didnt realize righ away thats its within it so in order to render it made a method to render the objects goals, and another to create the goals desc
 ```
 
 ## Deliverable 2: Like Button
@@ -126,6 +126,7 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
+Went after the pop const which referenced the likes button, added event listener and did the fetch for update. Had to parse int since content is string and added one when click. It also saves to db since db changed from 1000 to 1001
 
 ```
 
@@ -171,5 +172,5 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
-
+This one was a bit more straight forward, had videos used as reference. So it would render the new goal post and after it would take it off right away which confused me , although it was saved in the db. used the create goal to create it once again . 
 ```
