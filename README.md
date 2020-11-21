@@ -1,4 +1,10 @@
-# JS Mini Challenge: Fetch
+Uncaught (in promise) TypeError: Cannot read property 'forEach' of undefined
+    at renderPlayer (index.js:31)
+    at index.js:14
+renderPlayer @ index.js:31
+(anonymous) @ index.js:14
+Promise.then (async)
+(anonymous) @ index.js:14# JS Mini Challenge: Fetch
 
 ## Instructions
 
@@ -84,7 +90,13 @@ Once you've fetched the player, display the player in the DOM. You can re-use co
 
 **YOUR NOTES**
 ```
-
+Uncaught (in promise) TypeError: Cannot read property 'forEach' of undefined
+    at renderPlayer (index.js:31)
+    at index.js:14
+renderPlayer @ index.js:31
+(anonymous) @ index.js:14
+Promise.then (async)
+(anonymous) @ index.js:14
 ```
 
 ## Deliverable 2: Like Button
@@ -126,6 +138,11 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
+I'm struggling with how to grab the players id
+
+Uncaught ReferenceError: id is not defined
+    at HTMLButtonElement.<anonymous> (index.js:68)
+(anonymous) @ index.js:68
 
 ```
 
@@ -171,5 +188,9 @@ To check if your fetch request is working, you can look at the `db.json` file to
 
 **YOUR NOTES**
 ```
+I'm also struggling with id here. 
+
+index.js:98 Uncaught TypeError: Cannot read property 'id' of undefined
+    at HTMLFormElement.<anonymous> (index.js:98)
 
 ```
