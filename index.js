@@ -2,6 +2,8 @@
 const likeButton = document.querySelector(".like-button")
 const likes = document.querySelector(".likes")
 const form = document.querySelector("#new-goal-form")
+const doc = document.querySelector("body")
+doc.style.background = "AliceBlue"
 // console.log(form)
 
 // EVENT HANDLERS
@@ -21,8 +23,9 @@ const addLikes = () => {
     })
   })
     .then(response => response.json())
-    .then(data => console.log('Success:', data))
-// i would prefer to update my DOM from within the .then but I'm not confident in it. I tend to break things in new and creative ways!
+    .then(updatedPlayer => renderPlayer(updatedPlayer))
+  // i would prefer to update my DOM from within the .then but I'm not confident in it. I tend to break things in new and creative ways!
+  // update: figuring stuff out, this is awesome!!!
 }
 
 
@@ -45,9 +48,9 @@ const submitGoal = (event) => {
     body: JSON.stringify(newGoal)
   })
     .then(response => response.json())
-    .then(data => renderGoals(newGoal))
+    .then(data => renderOneGoal(newGoal))
 
-    event.target.reset()
+  event.target.reset()
 }
 
 
@@ -74,28 +77,26 @@ const renderPlayer = (playerObj) => {
 
 // I added player id & goals/player id because why not?! I need the practice.
 
-const renderGoals = (playerObj) => {
+const renderOneGoal = (goal) => {
   // console.log(playerObj.goals[0].description)
   const ul = document.querySelector("#goals")
-  playerObj.goals.forEach((goal) => {
-    const li = document.createElement("li")
-    const p = document.createElement("p")
-    li.textContent = goal.description
-    li.dataset.id = goal.id
-    li.dataset.playerId = goal.playerId
-    const a = document.createElement("a")
-    a.href = goal.link
-    a.target = "_blank"
-    a.textContent = goal.link
-    // console.log(goal.description)
-    // console.log(goal.link)
-    ul.append(p)
-    p.append(li, a)
-  })
+  const li = document.createElement("li")
+  const p = document.createElement("p")
+  const a = document.createElement("a")
+  li.dataset.id = goal.id
+  li.textContent = goal.description
+  a.href = goal.link
+  li.dataset.playerId = goal.playerId
+  a.target = "_blank"
+  a.textContent = goal.link
+  // console.log(goal.description)
+  // console.log(goal.link)
+  ul.append(p)
+  p.append(li, a)
 
 }
 
-// i know that I need to break out renderOneGoal from my forEach but when i do i break it into a million pieces. (PlayerObj isn't accessible from a separate function, the way I was doing it) so for now, just leaving as is! My new goals do persist even tho submission cause an error. Will be glad to know how to resolve this because my brain hurts too much right now to figure it out. thank you in advance ;)
+// fixed it!!! Feeling insanely accomplished.
 
 
 
@@ -104,10 +105,13 @@ const renderGoals = (playerObj) => {
 const initialize = () => {
   fetch("http://localhost:3000/players/1")
     .then(response => response.json())
-    .then(playerObj => {
-      renderPlayer(playerObj)
-      renderGoals(playerObj)
-      // console.log(playerObj)
+    .then(playerArray => {
+      playerArray.goals.forEach(goal => {
+        renderOneGoal(goal)
+      })
+      renderPlayer(playerArray)
+      // renderGoals(playerObj)
+      // console.log(playerArray.goals)
     })
 }
 
