@@ -4,8 +4,9 @@ const playerNickname = document.querySelector('em')
 const playerLikes = document.querySelector('p')
 const playerImg = document.querySelector('img')
 const goalUl = document.querySelector('#goals')
-const likeBtn = document.querySelector("like-button")
+const likeBtn = document.querySelector(".like-button")
 const vid = document.querySelector('#new-goal-form')
+let currentId = ""
 
   
 fetch ("http://localhost:3000/players/1") 
@@ -16,6 +17,7 @@ fetch ("http://localhost:3000/players/1")
     playerName.textContent = playerObj.name
     playerNickname.textContent = playerObj.nickname
     playerLikes.textContent = `${playerObj.likes} Likes`
+    currentId = playerObj.id
 
 })
 
@@ -60,3 +62,22 @@ likeBtn.addEventListener("click", function () {
         playerLikes.textContent = `${updatedLikes.likes} Likes` 
     })
   })
+
+  vid.addEventListener("submit", function() {
+    
+    fetch("http://localhost:3000/goals", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify ({
+            playerId: parseInt(currentId),
+            link: vid.link.value,
+            description: vid.description.value
+        })
+    })
+    .then(response => response.json())
+    .then(json => {
+        renderGoal(json)
+    })
+    })
