@@ -30,11 +30,12 @@ fetch ("http://localhost:3000/goals")
 })
 
 function renderGoal(goal) {
+    
+    if(goal.playerId === currentId){
     const goalLi = document.createElement('li')
     const goalP = document.createElement('p')
     const goalA = document.createElement('a')
 
-    
     goalLi.dataset.id = goal.id
     goalLi.dataset.playerid = goal.playerId
 
@@ -43,7 +44,7 @@ function renderGoal(goal) {
     goalA.textContent = goal.link
 
     goalLi.append(goalP, goalA)
-    goalUl.append(goalLi) 
+    goalUl.append(goalLi) }
 }
 
 
